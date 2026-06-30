@@ -1,0 +1,44 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "DHxWh_4f-72oHj-VF5Ihx"
+uri = "file://artifacts/puchis-website/public/images/hero.png"
+type = "image"
+title = "Hero professional reviewing documents"
+
+[[generated]]
+id = "fb3ci3RuZdP315Lw5x5CP"
+uri = "file://artifacts/puchis-website/public/images/services.png"
+type = "image"
+title = "Professionals in meeting"
+
+[[generated]]
+id = "rAHGt47bMuUFmnFosGZBt"
+uri = "file://artifacts/puchis-website/public/images/team-1.png"
+type = "image"
+title = "Andrew C. Puleni portrait"
+
+[[generated]]
+id = "FZ2gALiKnEhKxG_YJ41z7"
+uri = "file://artifacts/puchis-website/public/images/team-2.png"
+type = "image"
+title = "Grant Beni portrait"
+
+[[generated]]
+id = "0N96FIiuIGZrrOF3Ed_C7"
+uri = "file://artifacts/puchis-website/public/images/team-3.png"
+type = "image"
+title = "Dennis Chirundu portrait"
+
+[[generated]]
+id = "qiXZHX5cEx98caNljt5bR"
+uri = "file://artifacts/puchis-website/public/images/team-4.png"
+type = "image"
+title = "John Daka portrait"
+
+[[generated]]
+id = "qDO7_E7_0RzFC4GUveWUP"
+uri = "file://artifacts/puchis-website/public/images/team-5.png"
+type = "image"
+title = "Misheck Khonje portrait"
