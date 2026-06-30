@@ -170,8 +170,9 @@ function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-[#D4A853]/30 to-primary/20 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10 blur-sm"></div>
             <img 
-              src="/images/hero.png" 
+              src="/images/hero.webp" 
               alt="Procurement Professional" 
+              loading="eager"
               className="rounded-[2rem] shadow-2xl relative z-10 w-full object-cover aspect-[4/3] border border-white/50"
             />
             
@@ -459,8 +460,9 @@ function Services() {
           <motion.div variants={fadeUp} className="relative rounded-3xl overflow-hidden shadow-2xl group">
             <div className="aspect-[16/9] md:aspect-[21/9]">
               <img 
-                src="/images/services.png" 
+                src="/images/services.webp" 
                 alt="Procurement Professionals Meeting" 
+                loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D] via-[#0F1F3D]/60 to-transparent flex items-end">
@@ -486,31 +488,31 @@ function Team() {
       name: "Andrew C. Puleni",
       role: "Lead Partner",
       bio: "Oversees business operations and implementation. Expertise in project management, business strategy, key partnerships, and high-stake negotiations. BSc Business Administration (University of Malawi), MSc Supply Chain Management (University of Bolton, UK).",
-      image: "/images/team-1.png"
+      image: "/images/team-1.webp"
     },
     {
       name: "Grant Beni",
       role: "Consultant",
       bio: "Results-driven finance executive with over 18 years of experience in corporate finance, accounting, financial management, and strategic leadership. Currently Group CFO at HCJ Group of Companies.",
-      image: "/images/team-2.png"
+      image: "/images/team-2.webp"
     },
     {
       name: "Dennis Chirundu",
       role: "Consultant",
       bio: "Agricultural Economist and M&E professional. Expert in project monitoring, data analysis, community engagement, and digital data management tools.",
-      image: "/images/team-3.png"
+      image: "/images/team-3.webp"
     },
     {
       name: "John Daka",
       role: "Consultant",
       bio: "Full Stack Systems Developer with expertise in Node.js, React, MySQL, Odoo ERP, and RESTful APIs. Currently ICT Systems Developer at ESCOM Malawi Limited.",
-      image: "/images/team-4.png"
+      image: "/images/team-4.webp"
     },
     {
       name: "Misheck Khonje",
       role: "Consultant",
       bio: "Procurement and contracts professional with 7+ years of experience. CIPS qualified, member of Malawi Institute of Procurement and Supply (MIPS).",
-      image: "/images/team-5.png"
+      image: "/images/team-5.webp"
     }
   ];
 
@@ -544,6 +546,7 @@ function Team() {
                 <img 
                   src={member.image} 
                   alt={member.name} 
+                  loading="lazy"
                   className={`w-full h-full object-cover transition-transform duration-700 ${hoveredMember === index ? 'scale-105' : 'scale-100'}`}
                 />
                 
