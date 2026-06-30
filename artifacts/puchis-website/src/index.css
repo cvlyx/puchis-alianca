@@ -57,6 +57,13 @@
   --color-sidebar-accent-border: var(--sidebar-accent-border);
   --color-sidebar-ring: hsl(var(--sidebar-ring));
 
+  --color-gold: hsl(var(--gold));
+  --color-navy: hsl(var(--navy));
+  --color-cream: hsl(var(--cream));
+  --color-teal: hsl(var(--teal));
+  --color-coral: hsl(var(--coral));
+  --color-amber: hsl(var(--amber));
+
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
   --font-mono: var(--app-font-mono);
@@ -96,6 +103,13 @@
 
 /* LIGHT MODE */
 :root {
+  --gold: 38 62% 58%;
+  --navy: 222 63% 15%;
+  --cream: 40 25% 95%;
+  --teal: 180 50% 36%;
+  --coral: 16 100% 66%;
+  --amber: 38 92% 50%;
+
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
 
@@ -146,11 +160,11 @@
   --input: 220 13% 91%;
   --ring: 150 60% 20%;
 
-  --chart-1: 150 60% 20%;
-  --chart-2: 150 40% 35%;
-  --chart-3: 150 20% 50%;
-  --chart-4: 150 10% 70%;
-  --chart-5: 150 5% 85%;
+  --chart-1: 38 62% 58%;
+  --chart-2: 180 50% 36%;
+  --chart-3: 222 63% 15%;
+  --chart-4: 150 60% 20%;
+  --chart-5: 16 100% 66%;
 
   --app-font-sans: 'Inter', sans-serif;
   --app-font-serif: Georgia, serif;
@@ -247,11 +261,11 @@
 
   --input: 220 13% 20%;
   --ring: 150 60% 30%;
-  --chart-1: 150 60% 30%;
-  --chart-2: 150 40% 40%;
-  --chart-3: 150 20% 50%;
-  --chart-4: 150 10% 60%;
-  --chart-5: 150 5% 70%;
+  --chart-1: 38 62% 58%;
+  --chart-2: 180 50% 36%;
+  --chart-3: 222 63% 15%;
+  --chart-4: 150 60% 30%;
+  --chart-5: 16 100% 66%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(150 60% 20% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(150 60% 20% / 0.00);
