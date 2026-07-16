@@ -128,7 +128,7 @@ export function Navbar() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex-shrink-0">
-              <img src="/images/logo.png" alt="Puchis Limited" className="h-10 w-auto" />
+              <img src="/images/logo.png" alt="Puchis Limited" className="h-14 w-auto" />
             </Link>
 
             {/* Desktop Nav */}

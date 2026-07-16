@@ -48,7 +48,7 @@ export function Footer() {
 
           <div className="space-y-4">
             <Link href="/" className="block mb-4">
-              <img src="/images/logo.png" alt="Puchis Limited" className="h-10 w-auto" />
+              <img src="/images/logo.png" alt="Puchis Limited" className="h-14 w-auto" />
             </Link>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
               Quality products and expert procurement consultancy for public and private institutions in Malawi. General trading and supply chain solutions since 2018.
