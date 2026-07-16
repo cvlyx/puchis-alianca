@@ -2,5 +2,8 @@
   "framework": "vite",
   "buildCommand": "pnpm --filter @workspace/puchis-website run build",
   "installCommand": "pnpm install --ignore-scripts",
-  "outputDirectory": "artifacts/puchis-website/dist/public"
+  "outputDirectory": "artifacts/puchis-website/dist/public",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
