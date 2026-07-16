@@ -47,8 +47,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
 
           <div className="space-y-4">
-            <Link href="/" className="font-sans font-bold text-2xl tracking-tight text-white block mb-4">
-              PUCHIS LIMITED
+            <Link href="/" className="block mb-4">
+              <img src="/images/logo.png" alt="Puchis Limited" className="h-10 w-auto brightness-0 invert" />
             </Link>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
               Quality products and expert procurement consultancy for public and private institutions in Malawi. General trading and supply chain solutions since 2018.

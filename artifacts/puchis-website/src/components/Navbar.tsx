@@ -128,9 +128,7 @@ export function Navbar() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex-shrink-0">
-              <span className={`font-sans font-bold text-2xl tracking-tight transition-colors duration-300 ${logoColor}`}>
-                PUCHIS LIMITED
-              </span>
+              <img src="/images/logo.png" alt="Puchis Limited" className={`h-10 w-auto transition-all duration-300 ${isScrolled ? "" : "brightness-0 invert"}`} />
             </Link>
 
             {/* Desktop Nav */}
