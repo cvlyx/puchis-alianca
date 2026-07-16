@@ -53,7 +53,7 @@ const team = [
     name: "Grant Beni",
     role: "Director of Finance",
     bio: "Results-driven finance executive with over 18 years of progressive experience in corporate finance, accounting, financial management, and strategic leadership. Currently serving as Group Chief Financial Officer at HCJ Group of Companies. Adept at capital structuring, investment analysis, audit coordination, and strengthening internal control systems.",
-    image: "/images/team-2.webp",
+    image: "/images/team-grant.jpg",
   },
   {
     name: "John Daka",
