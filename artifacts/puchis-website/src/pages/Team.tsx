@@ -43,12 +43,12 @@ const team = [
     bio: "Responsible for overseeing the objectives and implementation of all business operations. Extensive expertise in projects management, business operations & strategy, key partnership development, high-stake negotiations, forward thinking & calculated risk management. Holds a Bachelors Degree of Business Administration from the University of Malawi (the Polytechnic) and a Master of Science Degree in Supply Chain Management from the University of Bolton (UK).",
     image: "/images/team-andrew.jpg",
   },
-  {
-    name: "Dennis Chirundu",
-    role: "Director of Commercial Services",
-    bio: "Dedicated Agricultural Economist and Monitoring & Evaluation professional with practical experience in project monitoring, data analysis, community engagement, and evidence-based program implementation. Skilled in designing M&E frameworks and utilizing digital data management platforms. Holds a BSc in Agricultural Economics from Lilongwe University of Agriculture and Natural Resources.",
-    image: "/images/team-3.webp",
-  },
+  // {
+  //   name: "Dennis Chirundu",
+  //   role: "Director of Commercial Services",
+  //   bio: "Dedicated Agricultural Economist and Monitoring & Evaluation professional with practical experience in project monitoring, data analysis, community engagement, and evidence-based program implementation. Skilled in designing M&E frameworks and utilizing digital data management platforms. Holds a BSc in Agricultural Economics from Lilongwe University of Agriculture and Natural Resources.",
+  //   image: "/images/team-3.webp",
+  // },
   {
     name: "Grant Beni",
     role: "Director of Finance",
