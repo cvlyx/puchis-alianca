@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, Building } from "lucide-react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -42,11 +43,36 @@ function PageHero() {
 }
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you for your message. We will get back to you shortly.");
-    (e.target as HTMLFormElement).reset();
-  };
+  const [state, handleSubmit] = useForm("xojgjzve");
+
+  if (state.succeeded) {
+    return (
+      <div className="flex flex-col w-full">
+        <PageHero />
+        <section className="py-24 bg-[#F8F5EE] relative overflow-hidden">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl mx-auto text-center">
+              <Card className="border-none shadow-2xl bg-white overflow-hidden relative">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2E8B8B] to-transparent"></div>
+                <CardContent className="px-8 py-16">
+                  <div className="w-16 h-16 bg-[#2E8B8B]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Mail size={32} className="text-[#2E8B8B]" />
+                  </div>
+                  <h2 className="text-3xl font-bold text-[#0F1F3D] mb-4">Message Sent!</h2>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    Thank you for reaching out. We typically respond within 24 hours.
+                  </p>
+                  <Button asChild className="bg-[#0F1F3D] hover:bg-primary text-white">
+                    <a href="/">Return Home</a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col w-full">
@@ -122,22 +148,26 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
                       <Label htmlFor="name" className="text-[#0F1F3D] font-semibold">Full Name</Label>
-                      <Input id="name" placeholder="John Doe" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <Input id="name" name="name" placeholder="John Doe" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-sm" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-[#0F1F3D] font-semibold">Email Address</Label>
-                      <Input id="email" type="email" placeholder="john@example.com" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <Input id="email" name="email" type="email" placeholder="john@example.com" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-sm" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="subject" className="text-[#0F1F3D] font-semibold">Subject</Label>
-                      <Input id="subject" placeholder="How can we help you?" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <Input id="subject" name="subject" placeholder="How can we help you?" required className="bg-[#F8F5EE] border-none h-12 focus-visible:ring-primary" />
+                      <ValidationError prefix="Subject" field="subject" errors={state.errors} className="text-red-500 text-sm" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message" className="text-[#0F1F3D] font-semibold">Message</Label>
-                      <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[150px] bg-[#F8F5EE] border-none resize-none focus-visible:ring-primary" required />
+                      <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[150px] bg-[#F8F5EE] border-none resize-none focus-visible:ring-primary" required />
+                      <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-sm" />
                     </div>
-                    <Button type="submit" className="w-full bg-[#0F1F3D] hover:bg-primary text-white h-14 text-lg rounded-xl transition-colors">
-                      Send Message
+                    <Button type="submit" disabled={state.submitting} className="w-full bg-[#0F1F3D] hover:bg-primary text-white h-14 text-lg rounded-xl transition-colors">
+                      {state.submitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </CardContent>
