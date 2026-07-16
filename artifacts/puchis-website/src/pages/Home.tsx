@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "wouter";
 import {
   Shield,
@@ -51,32 +50,6 @@ const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
 };
-
-function CountUp({ end, duration = 2 }: { end: number; duration?: number }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  useEffect(() => {
-    if (!isInView) return;
-    let startTime: number;
-    let animationFrame: number;
-    const updateCount = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
-      const percentage = Math.min(progress / (duration * 1000), 1);
-      const easeOut = 1 - Math.pow(1 - percentage, 3);
-      setCount(Math.floor(end * easeOut));
-      if (percentage < 1) {
-        animationFrame = requestAnimationFrame(updateCount);
-      }
-    };
-    animationFrame = requestAnimationFrame(updateCount);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [end, duration, isInView]);
-
-  return <span ref={ref}>{count}{end >= 7 ? "+" : ""}</span>;
-}
 
 function Hero() {
   return (
@@ -233,21 +206,6 @@ function AboutPreview() {
             <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
               Puchis Limited provides various goods and related services to private and public institutions and individuals within Malawi. Our products range includes Office Equipment and Supplies, Plant and Machinery, Hardware and Construction Materials, Personal Protective Equipment, and Agri-Business.
             </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 text-center border border-white/10">
-              <div className="text-4xl font-bold text-white mb-2"><CountUp end={7} /></div>
-              <div className="text-[#D4A853] font-medium tracking-wide uppercase text-sm">Years of Experience</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 text-center border border-white/10">
-              <div className="text-4xl font-bold text-white mb-2"><CountUp end={5} /></div>
-              <div className="text-[#D4A853] font-medium tracking-wide uppercase text-sm">Expert Consultants</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 text-center border border-white/10">
-              <div className="text-4xl font-bold text-white mb-2"><CountUp end={2} duration={1} /></div>
-              <div className="text-[#D4A853] font-medium tracking-wide uppercase text-sm">Sectors Served</div>
-            </div>
           </motion.div>
 
           <motion.div variants={fadeUp} className="text-center">
