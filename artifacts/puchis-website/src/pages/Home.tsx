@@ -23,6 +23,18 @@ import {
   Globe2,
   Quote,
   ArrowRight,
+  BookOpen,
+  FileText,
+  ClipboardList,
+  Search,
+  Gavel,
+  Handshake,
+  Truck,
+  ShieldCheck,
+  Wrench,
+  Cog,
+  Leaf,
+  ShoppingBag,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -301,16 +313,30 @@ function ValuesPreview() {
 }
 
 function ServicesPreview() {
-  const services = [
-    { icon: Monitor, title: "Procurement Consultancy", description: "Expert procurement trainings, policy development, audits, and bidding management for organizations.", color: "border-t-primary", textColor: "text-primary" },
-    { icon: Briefcase, title: "General Trading", description: "Quality office supplies, plant & machinery, hardware, PPE, and agricultural commodities.", color: "border-t-[#D4A853]", textColor: "text-[#D4A853]" },
+  const consultancyServices = [
+    { icon: BookOpen, title: "Procurement Trainings", description: "Employee development trainings in public procurement, donor-funded procurements, and tailor-made trainings for private institutions." },
+    { icon: FileText, title: "Procurement Policies", description: "Formulation of clear procurement policies for transparency, accountability, uniformity and stability. Establishment of Procurement Units and Internal Procurement Committees." },
+    { icon: ClipboardList, title: "Procurement Plans", description: "Sound procurement planning defining requirements, budgets, rules, packaging, procurement method selection, and scheduling." },
+    { icon: Search, title: "Procurement Audits", description: "Unprecedented visibility into expenditures to better manage spend portfolios, testing process effectiveness, evaluating operational efficiency, and providing recommendations." },
+    { icon: Gavel, title: "Bidding Process Management", description: "Full management of the bidding process for Goods, Works, Consultancy and Non-Consultancy Services including strategy development, evaluation, and award." },
+    { icon: Handshake, title: "Procurement Outsourcing", description: "Manage your procurement function to focus on strategic activities and enjoy economies of scale through consolidation leading to cost reduction." },
+    { icon: Monitor, title: "E-Procurement Services", description: "Modern technological tools including E-sourcing, MRP/CRP Systems, Digitalisation, Cloud and Mobile Solutions, and Artificial Intelligence." },
+  ];
+
+  const tradingCategories = [
+    { icon: Monitor, title: "Office Supplies", description: "Furniture, internet connection, kitchen supplies, telephone systems, photocopiers, software, stationery, storage and collaboration tools." },
+    { icon: Truck, title: "Plant, Machinery & Vehicle Hire", description: "Heavy plant & earthmoving equipment, commercial vehicle & logistics fleet, access & lifting solutions, specialized tools and managed services." },
+    { icon: ShieldCheck, title: "Industrial Safety PPE", description: "Gloves, work suits, disposable dust masks, PVC twin half masks, welding goggles, and safety boots." },
+    { icon: Wrench, title: "Hardware & General Supplies", description: "Building materials, hand tools, power tools, electrical supplies, plumbing materials, and general hardware." },
+    { icon: Cog, title: "Plant & Machinery", description: "Generators & power back-up systems, industrial plant & machinery, construction, manufacturing, and farming plant machinery." },
+    { icon: Leaf, title: "Agricultural Commodities", description: "Livestock (goats, cattle, fowls, sheep), soybeans, pulses & peas, assorted grains, meat, and oils." },
   ];
 
   return (
     <section className="py-24 bg-[#F8F5EE]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-20">
             <motion.div variants={fadeUp} className="flex justify-center mb-4">
               <span className="px-4 py-1.5 rounded-full bg-white text-[#0F1F3D] font-bold text-sm tracking-widest uppercase shadow-sm border border-border/50">
                 What We Do
@@ -324,30 +350,74 @@ function ServicesPreview() {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            {services.map((service, index) => (
-              <motion.div key={index} variants={fadeUp}>
-                <Card className={`h-full border-t-4 ${service.color} shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white group`}>
-                  <CardHeader>
-                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-4 ${service.textColor}`} style={{ backgroundColor: `color-mix(in srgb, currentColor 10%, transparent)` }}>
-                      <service.icon size={28} />
+          {/* Procurement Consultancy */}
+          <motion.div variants={fadeUp} className="mb-20">
+            <div className="flex items-center gap-4 mb-10">
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0">
+                <Briefcase size={24} />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-[#0F1F3D]">Procurement Consultancy</h3>
+                <p className="text-muted-foreground text-sm">Expert procurement solutions for public and private institutions</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {consultancyServices.map((service, index) => (
+                <motion.div key={index} variants={fadeUp}>
+                  <div className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-border/50 hover:shadow-lg hover:border-primary/30 transition-all duration-300 group h-full">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-primary" style={{ backgroundColor: `color-mix(in srgb, currentColor 10%, transparent)` }}>
+                      <service.icon size={20} />
                     </div>
-                    <CardTitle className="text-xl text-[#0F1F3D] group-hover:text-primary transition-colors">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
+                    <div>
+                      <h4 className="font-bold text-[#0F1F3D] group-hover:text-primary transition-colors mb-1">{service.title}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div variants={fadeUp} className="mt-8 text-center">
+              <Link href="/services">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8">
+                  View All Consultancy Services <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
+          </motion.div>
 
-          <motion.div variants={fadeUp} className="text-center">
-            <Link href="/services">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8">
-                View All Services <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
+          {/* General Trading */}
+          <motion.div variants={fadeUp}>
+            <div className="flex items-center gap-4 mb-10">
+              <div className="w-12 h-12 rounded-xl bg-[#D4A853] flex items-center justify-center text-white shrink-0">
+                <ShoppingBag size={24} />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-[#0F1F3D]">General Trading</h3>
+                <p className="text-muted-foreground text-sm">Quality products and supplies across multiple categories</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {tradingCategories.map((category, index) => (
+                <motion.div key={index} variants={fadeUp}>
+                  <div className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-border/50 hover:shadow-lg hover:border-[#D4A853]/30 transition-all duration-300 group h-full">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-[#D4A853]" style={{ backgroundColor: `color-mix(in srgb, currentColor 10%, transparent)` }}>
+                      <category.icon size={20} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-[#0F1F3D] group-hover:text-[#D4A853] transition-colors mb-1">{category.title}</h4>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{category.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div variants={fadeUp} className="mt-8 text-center">
+              <Link href="/products">
+                <Button className="bg-[#D4A853] text-white hover:bg-[#D4A853]/90 rounded-full px-8">
+                  View All Products <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
@@ -438,7 +508,7 @@ function ContactForm() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-[#0F1F3D] mb-2">Email</h4>
-                  <a href="mailto:andrewpuleni@yahoo.com" className="text-muted-foreground font-medium hover:text-primary transition-colors">andrewpuleni@yahoo.com</a>
+                  <a href="mailto:info@puchisi.org" className="text-muted-foreground font-medium hover:text-primary transition-colors">info@puchisi.org</a>
                 </div>
               </div>
             </div>

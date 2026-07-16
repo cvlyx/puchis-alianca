@@ -94,7 +94,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-[#0F1F3D] mb-2">Email</h4>
-                    <a href="mailto:andrewpuleni@yahoo.com" className="text-muted-foreground font-medium hover:text-primary transition-colors">andrewpuleni@yahoo.com</a>
+                    <a href="mailto:info@puchisi.org" className="text-muted-foreground font-medium hover:text-primary transition-colors">info@puchisi.org</a>
                   </div>
                 </div>
 

@@ -60,11 +60,26 @@ export function Footer() {
               </div>
               <div className="flex items-center text-muted-foreground text-sm">
                 <Mail className="mr-2 h-4 w-4 text-primary shrink-0" />
-                <span>andrewpuleni@yahoo.com</span>
+                <span>info@puchisi.org</span>
               </div>
               <div className="flex items-start text-muted-foreground text-sm">
                 <MapPin className="mr-2 h-4 w-4 text-primary shrink-0 mt-0.5" />
                 <span>Dabwisa House, Along Kidney Crescent Road, Blantyre</span>
+              </div>
+            </div>
+            <div className="pt-2 space-y-1.5">
+              <p className="text-xs font-semibold text-white/50 uppercase tracking-wider">Reach Us At</p>
+              <div className="flex items-center text-muted-foreground text-sm">
+                <Mail className="mr-2 h-3 w-3 text-primary shrink-0" />
+                <span>consultant@puchis.org</span>
+              </div>
+              <div className="flex items-center text-muted-foreground text-sm">
+                <Mail className="mr-2 h-3 w-3 text-primary shrink-0" />
+                <span>sales@puchis.org</span>
+              </div>
+              <div className="flex items-center text-muted-foreground text-sm">
+                <Mail className="mr-2 h-3 w-3 text-primary shrink-0" />
+                <span>info@puchisi.org</span>
               </div>
             </div>
           </div>
