@@ -41,7 +41,7 @@ const team = [
     name: "Andrew C. Puleni",
     role: "Director of Business Operations",
     bio: "Responsible for overseeing the objectives and implementation of all business operations. Extensive expertise in projects management, business operations & strategy, key partnership development, high-stake negotiations, forward thinking & calculated risk management. Holds a Bachelors Degree of Business Administration from the University of Malawi (the Polytechnic) and a Master of Science Degree in Supply Chain Management from the University of Bolton (UK).",
-    image: "/images/team-1.webp",
+    image: "/images/team-andrew.jpg",
   },
   {
     name: "Dennis Chirundu",
@@ -59,13 +59,13 @@ const team = [
     name: "John Daka",
     role: "Consultant",
     bio: "Skilled Software Engineer and Full Stack Systems Developer with experience in developing, implementing, and supporting enterprise applications, web platforms, and mobile solutions. Proficient in Node.js, React, JavaScript, MySQL, Odoo ERP, and RESTful APIs. Currently ICT Systems Developer at ESCOM Malawi Limited.",
-    image: "/images/team-4.webp",
+    image: "/images/team-john.jpg",
   },
   {
     name: "Misheck Khonje",
     role: "Consultant",
     bio: "Procurement, contracts, and administration professional with over seven years of experience in procurement management, project coordination, contract administration, and stakeholder engagement. CIPS qualified and member of the Malawi Institute of Procurement and Supply (MIPS). Currently serving as Administration and Contracts Manager.",
-    image: "/images/team-5.webp",
+    image: "/images/team-misheck.png",
   },
 ];
 
