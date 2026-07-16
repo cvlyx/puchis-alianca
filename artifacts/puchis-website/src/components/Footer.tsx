@@ -1,4 +1,5 @@
 import { MapPin, Mail, Phone } from "lucide-react";
+import { Link } from "wouter";
 
 export function Footer() {
   const scrollTo = (id: string) => {
@@ -9,75 +10,118 @@ export function Footer() {
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
       const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   };
 
-  const navLinks = [
-    { name: "Home", href: "home" },
-    { name: "About", href: "about" },
-    { name: "Services", href: "services" },
-    { name: "Team", href: "team" },
-    { name: "Contact", href: "contact" },
+  const quickLinks = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Products", href: "/products" },
+    { name: "Services", href: "/services" },
+    { name: "Our Team", href: "/team" },
+    { name: "Contact", href: "/contact" },
+  ];
+
+  const productLinks = [
+    { name: "Office Supplies", href: "/products#office-supplies" },
+    { name: "Plant & Vehicle Hire", href: "/products#plant-hire" },
+    { name: "Industrial Safety PPE", href: "/products#ppe" },
+    { name: "Hardware & Supplies", href: "/products#hardware" },
+    { name: "Plant & Machinery", href: "/products#machinery" },
+    { name: "Agricultural Commodities", href: "/products#commodities" },
+  ];
+
+  const serviceLinks = [
+    { name: "Procurement Trainings", href: "/services#trainings" },
+    { name: "Procurement Policies", href: "/services#policies" },
+    { name: "Procurement Audits", href: "/services#audits" },
+    { name: "Bidding Management", href: "/services#bidding" },
+    { name: "Procurement Outsourcing", href: "/services#outsourcing" },
+    { name: "E-Procurement", href: "/services#eprocurement" },
   ];
 
   return (
     <footer className="bg-foreground text-background py-16 border-t border-primary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
           <div className="space-y-4">
-            <span className="font-sans font-bold text-2xl tracking-tight text-white block mb-4">
+            <Link href="/" className="font-sans font-bold text-2xl tracking-tight text-white block mb-4">
               PUCHIS LIMITED
-            </span>
-            <p className="text-muted-foreground max-w-sm">
-              Leading Procurement Consultancy in Malawi. Helping modernize supply chain operations across public and private sectors.
+            </Link>
+            <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
+              Quality products and expert procurement consultancy for public and private institutions in Malawi. General trading and supply chain solutions since 2018.
             </p>
+            <div className="space-y-2 pt-2">
+              <div className="flex items-center text-muted-foreground text-sm">
+                <Phone className="mr-2 h-4 w-4 text-primary shrink-0" />
+                <span>+265 881 311 613</span>
+              </div>
+              <div className="flex items-center text-muted-foreground text-sm">
+                <Mail className="mr-2 h-4 w-4 text-primary shrink-0" />
+                <span>andrewpuleni@yahoo.com</span>
+              </div>
+              <div className="flex items-start text-muted-foreground text-sm">
+                <MapPin className="mr-2 h-4 w-4 text-primary shrink-0 mt-0.5" />
+                <span>Dabwisa House, Along Kidney Crescent Road, Blantyre</span>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {navLinks.map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <button 
-                    onClick={() => scrollTo(link.href)}
-                    className="text-muted-foreground hover:text-white transition-colors"
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground hover:text-white transition-colors text-sm"
                   >
                     {link.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white mb-4">Contact Info</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start text-muted-foreground">
-                <MapPin className="mr-2 h-5 w-5 text-primary shrink-0" />
-                <span>Dabwisa House, Along Kidney Crescent Road, Blantyre, Malawi</span>
-              </li>
-              <li className="flex items-center text-muted-foreground">
-                <Phone className="mr-2 h-5 w-5 text-primary shrink-0" />
-                <span>+265 881 311 613</span>
-              </li>
-              <li className="flex items-center text-muted-foreground">
-                <Mail className="mr-2 h-5 w-5 text-primary shrink-0" />
-                <span>andrewpuleni@yahoo.com</span>
-              </li>
+            <h4 className="text-lg font-semibold text-white mb-4">Products</h4>
+            <ul className="space-y-2">
+              {productLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground hover:text-white transition-colors text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
+            <ul className="space-y-2">
+              {serviceLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="text-muted-foreground hover:text-white transition-colors text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
         </div>
-        
+
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2025 Puchis Limited. All rights reserved.
+            &copy; {new Date().getFullYear()} Puchis Limited. All rights reserved.
           </p>
           <div className="text-muted-foreground text-sm flex gap-4">
             <span>COY-PLUE55A</span>

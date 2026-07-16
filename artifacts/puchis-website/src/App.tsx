@@ -4,6 +4,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import About from "@/pages/About";
+import Products from "@/pages/Products";
+import Services from "@/pages/Services";
+import Team from "@/pages/Team";
+import Contact from "@/pages/Contact";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { useState, useEffect } from "react";
@@ -52,6 +57,11 @@ function Router() {
       <main className="flex-1 w-full">
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/products" component={Products} />
+          <Route path="/services" component={Services} />
+          <Route path="/team" component={Team} />
+          <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </main>
