@@ -24,7 +24,7 @@ function PageHero() {
             Who We Are
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Founded in 2018, Puchis Limited has grown to become a trusted provider of quality products and expert procurement consultancy across Malawi.
+            Founded in 2018, Puchis Limited has grown to become a trusted provider of quality products and expert supply chain management consultancy across Malawi.
           </p>
         </motion.div>
       </div>

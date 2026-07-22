@@ -29,7 +29,7 @@ function PageHero() {
             Contact Us
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Reach out today to discuss how we can help optimize your procurement and supply chain operations.
+            Reach out today to discuss how we can help optimize your supply chain management operations.
           </p>
         </motion.div>
       </div>
@@ -88,7 +88,7 @@ export default function Contact() {
             <motion.div variants={fadeUp}>
               <h2 className="text-4xl md:text-5xl font-bold text-[#0F1F3D] mb-6">Let's Connect</h2>
               <p className="text-lg text-muted-foreground mb-12 max-w-md">
-                Reach out today to discuss how we can help optimize your procurement and supply chain operations.
+                Reach out today to discuss how we can help optimize your supply chain management operations.
               </p>
 
               <div className="space-y-8">

@@ -33,11 +33,11 @@ export function Footer() {
   ];
 
   const serviceLinks = [
-    { name: "Procurement Trainings", href: "/services#trainings" },
-    { name: "Procurement Policies", href: "/services#policies" },
-    { name: "Procurement Audits", href: "/services#audits" },
+    { name: "Supply Chain Trainings", href: "/services#trainings" },
+    { name: "Supply Chain Policies", href: "/services#policies" },
+    { name: "Supply Chain Audits", href: "/services#audits" },
     { name: "Bidding Management", href: "/services#bidding" },
-    { name: "Procurement Outsourcing", href: "/services#outsourcing" },
+    { name: "Supply Chain Outsourcing", href: "/services#outsourcing" },
     { name: "E-Procurement", href: "/services#eprocurement" },
   ];
 
@@ -51,7 +51,7 @@ export function Footer() {
               <img src="/images/logo.png" alt="Puchis Limited" className="h-20 w-auto" />
             </Link>
             <p className="text-muted-foreground max-w-sm text-sm leading-relaxed">
-              Quality products and expert procurement consultancy for public and private institutions in Malawi. General trading and supply chain solutions since 2018.
+              Quality products and expert supply chain management consultancy for public and private institutions in Malawi. General trading and supply chain solutions since 2018.
             </p>
             <div className="space-y-2 pt-2">
               <div className="flex items-center text-muted-foreground text-sm">

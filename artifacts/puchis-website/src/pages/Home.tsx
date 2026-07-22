@@ -85,7 +85,7 @@ function Hero() {
             >
               Quality Products & Expert{" "}
               <span className="text-primary relative whitespace-nowrap">
-                <span className="relative z-10">Procurement Solutions</span>
+                <span className="relative z-10">Supply Chain Solutions</span>
                 <span className="absolute bottom-1 left-0 w-full h-3 bg-[#D4A853]/30 -z-10 transform -rotate-1"></span>
               </span>
             </motion.h1>
@@ -93,7 +93,7 @@ function Hero() {
               variants={fadeUp}
               className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-lg"
             >
-              Providing quality products and innovative procurement consultancy services to private and public institutions across Malawi and beyond.
+              Providing quality products and innovative supply chain management consultancy services to private and public institutions across Malawi and beyond.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
               <Link href="/products">
@@ -126,7 +126,7 @@ function Hero() {
             <div className="absolute inset-0 bg-gradient-to-tr from-[#D4A853]/30 to-primary/20 rounded-[2rem] transform translate-x-4 translate-y-4 -z-10 blur-sm"></div>
             <img
               src="/images/hero.webp"
-              alt="Procurement Professional"
+              alt="Supply Chain Professional"
               loading="eager"
               className="rounded-[2rem] shadow-2xl relative z-10 w-full object-cover aspect-[4/3] border border-white/50"
             />
@@ -272,12 +272,12 @@ function ValuesPreview() {
 
 function ServicesPreview() {
   const consultancyServices = [
-    { icon: BookOpen, title: "Procurement Trainings", description: "Employee development trainings in public procurement, donor-funded procurements, and tailor-made trainings for private institutions." },
-    { icon: FileText, title: "Procurement Policies", description: "Formulation of clear procurement policies for transparency, accountability, uniformity and stability. Establishment of Procurement Units and Internal Procurement Committees." },
-    { icon: ClipboardList, title: "Procurement Plans", description: "Sound procurement planning defining requirements, budgets, rules, packaging, procurement method selection, and scheduling." },
-    { icon: Search, title: "Procurement Audits", description: "Unprecedented visibility into expenditures to better manage spend portfolios, testing process effectiveness, evaluating operational efficiency, and providing recommendations." },
+    { icon: BookOpen, title: "Supply Chain Trainings", description: "Employee development trainings in public supply chain management, donor-funded procurements, and tailor-made trainings for private institutions." },
+    { icon: FileText, title: "Supply Chain Policies", description: "Formulation of clear supply chain management policies for transparency, accountability, uniformity and stability. Establishment of Supply Chain Units and Internal Supply Chain Committees." },
+    { icon: ClipboardList, title: "Supply Chain Plans", description: "Sound supply chain planning defining requirements, budgets, rules, packaging, procurement method selection, and scheduling." },
+    { icon: Search, title: "Supply Chain Audits", description: "Unprecedented visibility into expenditures to better manage spend portfolios, testing process effectiveness, evaluating operational efficiency, and providing recommendations." },
     { icon: Gavel, title: "Bidding Process Management", description: "Full management of the bidding process for Goods, Works, Consultancy and Non-Consultancy Services including strategy development, evaluation, and award." },
-    { icon: Handshake, title: "Procurement Outsourcing", description: "Manage your procurement function to focus on strategic activities and enjoy economies of scale through consolidation leading to cost reduction." },
+    { icon: Handshake, title: "Supply Chain Outsourcing", description: "Manage your supply chain function to focus on strategic activities and enjoy economies of scale through consolidation leading to cost reduction." },
     { icon: Monitor, title: "E-Procurement Services", description: "Modern technological tools including E-sourcing, MRP/CRP Systems, Digitalisation, Cloud and Mobile Solutions, and Artificial Intelligence." },
   ];
 
@@ -308,15 +308,15 @@ function ServicesPreview() {
             </motion.p>
           </div>
 
-          {/* Procurement Consultancy */}
+          {/* Supply Chain Consultancy */}
           <motion.div variants={fadeUp} className="mb-20">
             <div className="flex items-center gap-4 mb-10">
               <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shrink-0">
                 <Briefcase size={24} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#0F1F3D]">Procurement Consultancy</h3>
-                <p className="text-muted-foreground text-sm">Expert procurement solutions for public and private institutions</p>
+                <h3 className="text-2xl font-bold text-[#0F1F3D]">Supply Chain Consultancy</h3>
+                <p className="text-muted-foreground text-sm">Expert supply chain management solutions for public and private institutions</p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -403,7 +403,7 @@ function CtaBanner() {
             Ready to Transform Your <span className="text-[#D4A853]">Organisation?</span>
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-            Partner with Puchis Limited for quality products, reliable supplies, and expert procurement consultancy solutions.
+            Partner with Puchis Limited for quality products, reliable supplies, and expert supply chain management solutions.
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-white text-[#0F1F3D] hover:bg-[#F8F5EE] hover:text-primary text-lg rounded-full px-10 h-16 font-bold shadow-2xl transition-all duration-300 hover:scale-105">
@@ -434,7 +434,7 @@ function ContactForm() {
           <motion.div variants={fadeUp}>
             <h2 className="text-4xl md:text-5xl font-bold text-[#0F1F3D] mb-6">Let's Connect</h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-md">
-              Reach out today to discuss how we can help optimize your procurement and supply chain operations.
+              Reach out today to discuss how we can help optimize your supply chain management operations.
             </p>
 
             <div className="space-y-8">

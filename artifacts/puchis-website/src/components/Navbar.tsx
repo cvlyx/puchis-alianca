@@ -73,14 +73,14 @@ export function Navbar() {
 
   const services = [
     {
-      category: "Procurement Consultancy",
+      category: "Supply Chain Consultancy",
       items: [
-        { icon: BookOpen, name: "Procurement Trainings", href: "/services#trainings" },
-        { icon: FileText, name: "Procurement Policies", href: "/services#policies" },
-        { icon: ClipboardList, name: "Procurement Plans", href: "/services#plans" },
-        { icon: Search, name: "Procurement Audits", href: "/services#audits" },
+        { icon: BookOpen, name: "Supply Chain Trainings", href: "/services#trainings" },
+        { icon: FileText, name: "Supply Chain Policies", href: "/services#policies" },
+        { icon: ClipboardList, name: "Supply Chain Plans", href: "/services#plans" },
+        { icon: Search, name: "Supply Chain Audits", href: "/services#audits" },
         { icon: Gavel, name: "Bidding Management", href: "/services#bidding" },
-        { icon: Handshake, name: "Procurement Outsourcing", href: "/services#outsourcing" },
+        { icon: Handshake, name: "Supply Chain Outsourcing", href: "/services#outsourcing" },
         { icon: Monitor, name: "E-Procurement Services", href: "/services#eprocurement" },
       ],
     },

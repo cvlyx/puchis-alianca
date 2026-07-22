@@ -24,7 +24,7 @@ function PageHero() {
             Our Services
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            Two core service lines: Procurement Consultancy and General Trading, delivering value to organizations across Malawi.
+            Two core service lines: Supply Chain Consultancy and General Trading, delivering value to organizations across Malawi.
           </p>
         </motion.div>
       </div>
@@ -41,25 +41,25 @@ const consultancyServices = [
   {
     id: "trainings",
     icon: BookOpen,
-    title: "Procurement Trainings",
-    description: "Employee development trainings in public procurement, donor-funded procurements, and tailor-made procurements for private institutions to improve performance and effectiveness of management teams, procurement professionals, evaluation teams, stores professionals, and bidders.",
+    title: "Supply Chain Trainings",
+    description: "Employee development trainings in public supply chain management, donor-funded procurements, and tailor-made trainings for private institutions to improve performance and effectiveness of management teams, supply chain professionals, evaluation teams, stores professionals, and bidders.",
   },
   {
     id: "policies",
     icon: FileText,
-    title: "Procurement Policies",
-    description: "Formulation of clear, well-written procurement policies and procedures for transparency, accountability, uniformity and stability. Including establishment of efficient Procurement Units, Internal Procurement Committees, evaluation committees, and liaison with PPDA.",
+    title: "Supply Chain Policies",
+    description: "Formulation of clear, well-written supply chain management policies and procedures for transparency, accountability, uniformity and stability. Including establishment of efficient Supply Chain Units, Internal Supply Chain Committees, evaluation committees, and liaison with PPDA.",
   },
   {
     id: "plans",
     icon: ClipboardList,
-    title: "Procurement Plans",
-    description: "Sound procurement planning that defines requirements, budgets, rules, packaging, procurement method selection, and scheduling to help Procuring Entities decide where and when to procure.",
+    title: "Supply Chain Plans",
+    description: "Sound supply chain planning that defines requirements, budgets, rules, packaging, procurement method selection, and scheduling to help Procuring Entities decide where and when to procure.",
   },
   {
     id: "audits",
     icon: Search,
-    title: "Procurement Audits",
+    title: "Supply Chain Audits",
     description: "Unprecedented visibility into expenditures to better manage spend portfolios. Testing process effectiveness, evaluating operational efficiency, verifying asset protection, checking data security, detecting failures and non-conformities, and providing recommendations.",
   },
   {
@@ -71,8 +71,8 @@ const consultancyServices = [
   {
     id: "outsourcing",
     icon: Handshake,
-    title: "Procurement Outsourcing",
-    description: "Manage your procurement function to focus on strategic activities and enjoy economies of scale through consolidation leading to cost reduction. Methods include National and International Competitive Bidding, Minor, Plant and Vehicles, and Request for Quotations.",
+    title: "Supply Chain Outsourcing",
+    description: "Manage your supply chain function to focus on strategic activities and enjoy economies of scale through consolidation leading to cost reduction. Methods include National and International Competitive Bidding, Minor, Plant and Vehicles, and Request for Quotations.",
   },
   {
     id: "eprocurement",
@@ -96,7 +96,7 @@ export default function Services() {
     <div className="flex flex-col w-full">
       <PageHero />
 
-      {/* Procurement Consultancy */}
+      {/* Supply Chain Consultancy */}
       <section className="py-24 bg-[#F8F5EE]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={staggerContainer}>
@@ -107,10 +107,10 @@ export default function Services() {
                 </span>
               </motion.div>
               <motion.h2 variants={fadeUp} className="text-3xl md:text-5xl font-bold text-[#0F1F3D] mb-6">
-                Procurement Consultancy
+                Supply Chain Consultancy
               </motion.h2>
               <motion.p variants={fadeUp} className="text-lg text-muted-foreground">
-                Expert procurement solutions tailored to your organisation's unique challenges and strategic goals.
+                Expert supply chain management solutions tailored to your organisation's unique challenges and strategic goals.
               </motion.p>
             </div>
 
@@ -193,7 +193,7 @@ export default function Services() {
                 <div className="p-8 md:p-12 text-white w-full max-w-4xl">
                   <span className="text-[#D4A853] font-bold tracking-widest text-sm uppercase mb-2 block">Partnership</span>
                   <h3 className="text-3xl md:text-4xl font-bold mb-4">Transforming Operations</h3>
-                  <p className="text-white/80 text-lg md:text-xl leading-relaxed">Partner with us to build resilient, efficient, and transparent procurement processes that drive your organization forward.</p>
+                  <p className="text-white/80 text-lg md:text-xl leading-relaxed">Partner with us to build resilient, efficient, and transparent supply chain processes that drive your organization forward.</p>
                 </div>
               </div>
             </div>

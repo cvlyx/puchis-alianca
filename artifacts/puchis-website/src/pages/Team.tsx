@@ -23,7 +23,7 @@ function PageHero() {
             Key Management Team
           </h1>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            A diverse team of professionals with different backgrounds, including individuals with more than 20 years of experience within the field of procurement and supply chain.
+            A diverse team of professionals with different backgrounds, including individuals with more than 20 years of experience within the field of supply chain management.
           </p>
         </motion.div>
       </div>
@@ -64,7 +64,7 @@ const team = [
   {
     name: "Misheck Khonje",
     role: "Consultant",
-    bio: "Procurement, contracts, and administration professional with over seven years of experience in procurement management, project coordination, contract administration, and stakeholder engagement. CIPS qualified and member of the Malawi Institute of Procurement and Supply (MIPS). Currently serving as Administration and Contracts Manager.",
+    bio: "Supply chain management, contracts, and administration professional with over seven years of experience in supply chain management, project coordination, contract administration, and stakeholder engagement. CIPS qualified and member of the Malawi Institute of Procurement and Supply (MIPS). Currently serving as Administration and Contracts Manager.",
     image: "/images/team-misheck.png",
   },
 ];
